@@ -1,7 +1,24 @@
 
 # ec2spinup.tf
+
+# ON EC2 Instance ...
+# mkdir <terraform-depot>
+# Install Hashicorp Binary @
+# https://www.terraform.io/
+# unzip file ... 
+# Setup path for BINARY ...
+# echo $"export PATH=\$PATH:$(pwd)" >> ~/.bash_profile
+# source ~/.bash_profile
+# terraform init
+# Get AMI Image ID @
+# https://cloud-images.ubuntu.com/locator/ec2/
+# create ec2.tf or whatever ...
+# Start coding 
+
+# EC2 access to VPC/API 
 # pip3 install awscli
 # Assigned "Admin Role To ec2 instance/terraform server
+
 
 
 provider "aws" {
