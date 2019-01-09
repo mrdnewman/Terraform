@@ -39,3 +39,6 @@ resource "aws_instance" "target01" {
      Name = "target01"
   }
 }
+
+
+
