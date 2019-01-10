@@ -27,7 +27,7 @@ provider "aws" {
 
 resource "aws_key_pair" "ec2-access" {
   key_name = "ec2-access"
-  public_key = "<At Shell, ssh-keygen, paste it>"
+  public_key = "<paste public key here ...>"
   # ssh-keygen -f ec2-access
 }
 
