@@ -42,3 +42,31 @@ resource "aws_instance" "target01" {
 
 
 
+# Example-2
+provider "aws" {
+  region = "us-east-2"
+}
+
+resource "aws_key_pair" "ec2-acc1" {
+  key_name = "ec2-acc1"
+  public_key = "<paste pubkey here>"
+}
+
+resource "aws_instance" "target01" {
+  ami = "ami-0f65671a86f061fcd"
+  instance_type = "t2.micro"
+  key_name = "ec2-acc1"
+  tags {
+     Name = "target01"
+  }
+}
+
+
+
+
+
+
+
+
+
+
