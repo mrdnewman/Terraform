@@ -11,7 +11,20 @@
 # source ~/.bash_profile
 # terraform init
 # Get AMI Image ID @
+
+# FINDING AMI'S
 # https://cloud-images.ubuntu.com/locator/ec2/
+# https://wiki.centos.org/Cloud/AWS
+-------------------------------------------
+Finding AMI ids
+If you want to use find the ami ids with the api, you can use the product code to search 
+in each region. Keep in mind that multiple AMI ids may be associated with a product key. 
+These correspond to different releases of the product. 
+Here's an example command using awscli in us-east-1 to find the CentOS-7 images:  
+$ aws --region us-east-1 ec2 describe-images --owners aws-marketplace --filters Name=product-code,Values=aw0evgkw8e5c1q413zgy5pjce
+
+
+
 # create ec2.tf or whatever ...
 # Start coding 
 
